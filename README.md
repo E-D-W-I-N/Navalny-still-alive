@@ -6,3 +6,5 @@
 
 ![Alt-текст](https://pp.userapi.com/c840125/v840125458/6f5e2/DVFqykVtOPo.jpg "Еще не убили?")
 ![Alt-текст](https://image.prntscr.com/image/VxjU2MKPR8_3UoqvGJH5TQ.png "Еще не убили?")
+
+.Bat файл для быстрого запуска программы находится в папке target и называется NSA.bat. Перед использованием мне забудьте поменять путь к файлу NSA-0.0.1-SNAPSHOT.jar (Он также находится в папке target)

@@ -6,6 +6,7 @@ import java.net.URL;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+
 public class Parser {
 
 	private static Document getPage() throws MalformedURLException, IOException {
@@ -13,7 +14,7 @@ public class Parser {
 		Document page = Jsoup.parse(new URL(Url), 3000);
 		return page;
 	}
-	
+
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		Document page = getPage();
 		String Answer = page.selectFirst("div[class=wall_text]").text();

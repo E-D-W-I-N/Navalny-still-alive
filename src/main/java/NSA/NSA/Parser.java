@@ -18,8 +18,7 @@ public class Parser {
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		Document page = getPage();
 		String Answer = page.selectFirst("div[class=wall_text]").text();
-		System.out.println(" - Навального еще не убили?");
-		System.out.println(" - " + Answer);
+		new GUI(Answer);
 
 	}
 

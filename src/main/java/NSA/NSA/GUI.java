@@ -29,11 +29,18 @@ public class GUI {
 		label_1.setBounds(10, 54, 414, 50);
 		frame.getContentPane().add(label_1);
 		
-		JButton btnNewButton = new JButton("Узнать!");
+		JLabel label_2 = new JLabel(" ");
+		label_2.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 17));
+		label_2.setBounds(10, 115, 414, 80);
+		frame.getContentPane().add(label_2);
+		
+		JButton btnNewButton = new JButton("Узнать");
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				label_1.setText(" - " + Answer + " ( Информация получена " + Date + " )");
+				label_1.setText(" - " + Answer);
+				label_2.setText("(Информация получена " + Date + ")");
+				btnNewButton.setText("Спасибо что живой!");
 			}
 		});
 		btnNewButton.setBounds(0, 206, 434, 94);

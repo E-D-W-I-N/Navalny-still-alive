@@ -15,7 +15,7 @@ public class GUI {
 	/**
 	 * @wbp.parser.entryPoint
 	 */
-	public GUI(String Answer) {
+	public GUI(String Answer, String Date) {
 		JFrame frame = new JFrame();
 		frame.getContentPane().setLayout(null);
 
@@ -25,15 +25,15 @@ public class GUI {
 		frame.getContentPane().add(label);
 		
 		JLabel label_1 = new JLabel(" ");
-		label_1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 22));
-		label_1.setBounds(10, 54, 156, 24);
+		label_1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 20));
+		label_1.setBounds(10, 54, 414, 50);
 		frame.getContentPane().add(label_1);
 		
 		JButton btnNewButton = new JButton("Узнать!");
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				label_1.setText(" - " + Answer);
+				label_1.setText(" - " + Answer + " ( Информация поучена " + Date + " )");
 			}
 		});
 		btnNewButton.setBounds(0, 206, 434, 94);

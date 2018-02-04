@@ -17,8 +17,9 @@ public class Parser {
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		Document page = getPage();
+		String Date = page.selectFirst("div[class=post_date]").text();
 		String Answer = page.selectFirst("div[class=wall_text]").text();
-		new GUI(Answer);
+		new GUI(Answer, Date);
 
 	}
 

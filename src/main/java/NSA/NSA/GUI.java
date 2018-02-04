@@ -33,7 +33,7 @@ public class GUI {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				label_1.setText(" - " + Answer + " ( Информация поучена " + Date + " )");
+				label_1.setText(" - " + Answer + " ( Информация получена " + Date + " )");
 			}
 		});
 		btnNewButton.setBounds(0, 206, 434, 94);
